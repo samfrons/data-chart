@@ -29,6 +29,10 @@
             font-size: 4em;
         }
 
+        .name {
+            font-weight: bold;
+        }
+
         p {
             font-family: sans-serif;
             font-size: 1.5em;
@@ -145,8 +149,8 @@ $(function () {
 
   
       tooltip: {
-               headerFormat: '<h2>{point.name}</h2>',
-                pointFormat: '<div><h2>{point.name}</h2><br>' + '<h3>Age:{point.name} </h3>'+ '<h3>Age:{point.y} </h3> </div>',
+               headerFormat: '<h2 class="name" style="color: red;">{point.name}</h2>',
+                pointFormat: '<div><h2 class="profession">{point.profession}</h2><br>' + '<h2 class="profession">{point.profession}</h2>' +'<h3 class="name">{point.name}</h3>'+ '<br>' +'<h3>Age:{point.y} </h3> </div>',
            
             
     },
@@ -254,7 +258,7 @@ $(function () {
                     marker: {
                         symbol: 'url(images/joplin-s.png)',
 
-                    }
+                    },
                 },
                 {
                     name: 'Jean Michel Basquiat',
@@ -485,7 +489,54 @@ $(function () {
                     marker: {
                         symbol: 'url(images/hendrix-s.png)'
                     },
-                }],
+                },
+
+                {
+                    name: 'Chris Penn',
+                     x: 2006,
+                    y: 40,
+                    profession: 'Actor',
+                    photo: "jay-reatard.jpg",
+                    marker: {
+                        symbol: 'url(images/penn-s.png)'
+                    },
+                },
+
+                  {
+                    name: 'Sylvia Plath',
+                     x: 1963,
+                    y: 30,
+                    profession: 'Writer',
+                    photo: "jay-reatard.jpg",
+                    marker: {
+                        symbol: 'url(images/plath-s.png)'
+                    },
+                },
+
+                {
+                    name: 'Edgar Allan Poe',
+                     x: 1849,
+                    y: 40,
+                    profession: 'Poet',
+                    photo: "jay-reatard.jpg",
+                    marker: {
+                        symbol: 'url(images/poe-s.png)'
+                    },
+                },
+
+                 {
+                    name: 'Branwell Brontë',
+                     x: 1848,
+                    y: 31,
+                    profession: 'Poet, painter, writer',
+                    photo: "jay-reatard.jpg",
+                    marker: {
+                        symbol: 'url(images/branwell-s.png)'
+                    },
+                },
+
+
+                ],
             marker: {
                 enabled: true,
                
