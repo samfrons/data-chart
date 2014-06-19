@@ -1319,6 +1319,7 @@ defaultOptions = {
 		VMLRadialGradientURL: 'http://code.highcharts.com/4.0.1/gfx/vml-radial-gradient.png'
 	},
 	chart: {
+		type: 'scatter'
 		//animation: true,
 		//alignTicks: false,
 		//reflow: true,
