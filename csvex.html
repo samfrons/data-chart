@@ -20,7 +20,6 @@
             width: 100%;
             max-width: 1250px;
             margin: 0 auto;
-            
         }
 
         h1, h2 {
@@ -147,7 +146,7 @@ $(function () {
   
       tooltip: {
                headerFormat: '<h2>{point.name}</h2>',
-                pointFormat: '<div><h2>{point.name}</h2><br>' + '<h3>Age:{point.y} </h3> </div>',
+                pointFormat: '<div><h2>{point.name}</h2><br>' + '<h3>Age:{point.name} </h3>'+ '<h3>Age:{point.y} </h3> </div>',
            
             
     },
@@ -164,7 +163,8 @@ $(function () {
         },
         series: [{
             name: 'Alcohol',
-            type: 'spline',
+            type: 'scatter', 
+            lineWidth: 2,
             color: 'rgba(0, 136, 204,.8)',
             yAxis: 1,
             data: [{
@@ -241,7 +241,8 @@ $(function () {
 
         }, {
             name: 'Herion',
-            type: 'spline',
+            type: 'scatter', 
+            lineWidth: 2,
             color: 'rgba(40,40,40,.8',
             yAxis: 1,
             data: [{
@@ -323,7 +324,8 @@ $(function () {
 
         {
             name: 'Pills',
-            type: 'spline',
+            type: 'scatter', 
+            lineWidth: 2,
             yAxis: 1,
             color: 'rgba(210, 221, 40,.8)',
             data: [{
@@ -416,7 +418,8 @@ $(function () {
 
         {
             name: 'Cocaine',
-            type: 'spline',
+            type: 'scatter', 
+            lineWidth: 2,
             color: 'rgba(220, 240, 240,.9)',
             yAxis: 1,
             data: [{
@@ -449,7 +452,8 @@ $(function () {
 
         {
             name: 'Combinations/Complications',
-            type: 'spline',
+            type: 'scatter', 
+            lineWidth: 2,
             color: 'rgba(242, 62, 71,.8)',
             yAxis: 1,
             data: [{
