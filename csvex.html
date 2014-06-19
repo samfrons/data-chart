@@ -1,0 +1,545 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>Highcharts Example</title>
+
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+
+        <style>
+        body {
+            margin: 0;
+            font-size: 66%;
+            -webkit-font-smoothing: antialiased;
+        }
+        header {
+            background: url(http://subtlepatterns.com/patterns/congruent_pentagon.png);
+
+        }
+        .container {
+            width: 100%;
+            max-width: 1250px;
+            margin: 0 auto;
+            
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: rgba(51,51,51,.8);
+            font-family: "Pacifico";
+            font-size: 4em;
+        }
+
+        p {
+            font-family: sans-serif;
+            font-size: 1.5em;
+        }
+                text > tspan:first-child {
+                    opacity: 0;
+                }
+
+                .highcharts-button {
+                    display: none;
+                }
+
+                #container {
+                   
+                    margin-bottom: 50px;
+                    overflow: visible !important;
+                    min-height: 600px !important;
+                    overflow: visible;
+                }
+
+                .highcharts-container {
+                    overflow: visible !important;
+                    min-height: 600px !important;
+                }
+
+                svg {
+                    height: 700px;
+                     overflow: visible;
+                }
+
+                rect {
+
+                }
+        </style>
+		<script type="text/javascript">
+$(function () {
+    $('#container').highcharts({
+        chart: {
+            zoomType: 'xy',
+            type: 'area'
+        },
+      
+        xAxis: [{
+
+                title: {
+                enabled: true,
+                text: 'year'
+                
+                  
+            },
+         
+           labels: {
+            format: '{value}'
+        }
+         
+            
+        }],
+
+        plotOptions: {
+            spline: {
+                marker: {
+                    radius: 10,
+                    symbol: "circle",
+                    states: {
+                        hover: {
+                            enabled: true,
+                           
+                        }
+                    }
+
+                },
+                states: {
+                    hover: {
+                        marker: {
+                            enabled: false
+                        }
+                    }
+                },
+                tooltip: {
+                    headerFormat: '<b>{series.name}</b><br>',
+                 
+                }
+            }
+        },
+        yAxis: [{ // Primary yAxis
+            labels: {
+                format: null,
+                style: {
+                    color: Highcharts.getOptions().colors[2]
+                }
+            },
+            title: {
+                 text: null,
+                style: {
+                    color: Highcharts.getOptions().colors[2]
+                }
+            },
+    
+        }, 
+{ 
+            gridLineWidth: 0,
+           
+            
+        }],
+        /*
+      tooltip: {
+                    useHTML: true,
+                    formatter: function() {
+                    var s = '<' + this.x + '</td>'
+                + '<td>' + this.y + '</td></tr><tr><td>uh</td><td>oh</td></tr></table>';
+
+                        return s;
+        }*/
+
+  
+      tooltip: {
+               headerFormat: '<h2>{point.name}</h2>',
+                pointFormat: '<div><h2>{point.name}</h2><br>' + '<h3>Age:{point.y} </h3> </div>',
+           
+            
+    },
+
+        legend: {
+            layout: 'horizontal',
+            align: 'right',
+            x: 0,
+            verticalAlign: 'bottom',
+            y: 20,
+            floating: true,
+            lineHeight: 10,
+            backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor) || 'rgba(255,255,255,0)'
+        },
+        series: [{
+            name: 'Alcohol',
+            type: 'spline',
+            color: 'rgba(0, 136, 204,.8)',
+            yAxis: 1,
+            data: [{
+                    name: 'George Best',
+                    x: 2005,
+                    y: 59,
+                    profession: 'Football Player',
+                    photo: "Hank_Williams.jpg",
+                    marker: {
+                        symbol: 'url(images/best-s.png)',
+
+                    },
+                     },
+                    {
+                    name: 'Hank Williams',
+                    x: 1953,
+                    y: 29,
+                    profession: 'Musican',
+                    photo: "Hank_Williams.jpg",
+                    marker: {
+                        symbol: 'url(images/Hank_Williams-s.png)',
+
+                    },
+                }, {
+                    name: 'F. Scott Fitzgerald',
+                    x: 1940,
+                    y: 44,
+                    profession: 'Writer',
+                    photo: "Hank_Williams.jpg",
+                    marker: {
+                        symbol: 'url(images/F_Scott_Fitzgerald-s.png)'
+                    }
+                    }, {
+                    name: 'Brendan Behan',
+                    x: 1964,
+                    y: 41,
+                    profession: 'Writer',
+                    photo: "Hank_Williams.jpg",
+                    marker: {
+                        symbol: 'url(images/brenden-behan-s.png)'
+                    },
+
+                    }, {
+                    name: 'Ed Delahanty',
+                    x: 1903,
+                    y: 35,
+                    profession: 'Baseball Player',
+                    photo: "Hank_Williams.jpg",
+                    marker: {
+                        symbol: 'url(images/ed-delahanty-s.png)'
+                    },
+
+                    }, {
+                    name: 'Errol Flynn',
+                    x: 1959,
+                    y: 50,
+                    profession: 'Actor',
+                    photo: "Hank_Williams.jpg",
+                    marker: {
+                        symbol: 'url(images/errol-flynn-s.png)'
+                    },
+
+                    }, {
+                    name: 'Ira Hayes',
+                    x: 1955,
+                    y:32,
+                    profession: 'Marine',
+                    photo: "Hank_Williams.jpg",
+                    marker: {
+                        symbol: 'url(images/hayes-s.png)'
+                    },
+                }],
+            
+
+        }, {
+            name: 'Herion',
+            type: 'spline',
+            color: 'rgba(40,40,40,.8',
+            yAxis: 1,
+            data: [{
+                    name: 'Janis Joplin',
+                    x: 1970,
+                    y: 27,
+                    profession: 'Musician',
+                    photo: "Hank_Williams.jpg",
+                    marker: {
+                        symbol: 'url(images/joplin-s.png)',
+
+                    }
+                },
+                {
+                    name: 'Jean Michel Basquiat',
+                    x: 1988,
+                    y: 27,
+                    profession: 'Artist',
+                    photo: "Hank_Williams.jpg",
+                    marker: {
+                        symbol: 'url(images/Jean-Michel_Basquiat-s.png)',
+
+                    }
+                }, {
+                    name: 'River Phoenix',
+                     x: 1993,
+                    y: 23,
+                    profession: 'Actor',
+                  
+                    marker: {
+                        symbol: 'url(images/river-phoenix-s.png)'
+                    }
+
+                    }, {
+                    name: 'Jim Morrison',
+                    x: 1971,
+                    y: 27,
+                    profession: 'Musican',
+                  
+                    marker: {
+                        symbol: 'url(images/jim-morisson-s.png)'
+                    },
+                     }, {
+                    name: 'Chet Baker',
+                    x: 1988,
+                    y: 58,
+                    profession: 'Musican',
+                  
+                    marker: {
+                        symbol: 'url(images/chet-baker-s.png)'
+                    },
+                     }, {
+                    name: 'Coco Chanel',
+                    x: 1971,
+                    y: 87,
+                    profession: 'Fashion Designer',
+                  
+                    marker: {
+                        symbol: 'url(images/coco-chanel-s.png)'
+                    },
+
+                    }, {
+                    name: 'Gia Carangi',
+                    x: 1986,
+                    y: 26,
+                    profession: 'Model',
+                  
+                    marker: {
+                        symbol: 'url(images/gia-s.png)'
+                    },
+                }],
+            marker: {
+                enabled: true,
+               
+            },
+           
+         
+        },
+
+        {
+            name: 'Pills',
+            type: 'spline',
+            yAxis: 1,
+            color: 'rgba(210, 221, 40,.8)',
+            data: [{
+                    name: 'Aimee Semple McPherson',
+                     x: 1920,
+                    y: 53,
+                    profession: 'Evangelist',
+                    photo: "Aimee_Semple.jpg",
+                    marker: {
+                        symbol: 'url(images/Aimee_Semple-s.png)',
+
+                    }
+                },
+
+                {
+                    name: 'Heath Ledger',
+                     x: 2008,
+                    y: 28,
+                    profession: 'Actor',
+                    photo: "Aimee_Semple.jpg",
+                    marker: {
+                        symbol: 'url(images/heath-s.png)',
+
+                    }
+                },
+
+                 {
+                    name: 'Marilyn Monroe',
+                     x: 1962,
+                    y: 36,
+                    profession: 'Actress, Model',
+                    marker: {
+                        symbol: 'url(images/marilyn-monroe-s.png)'
+                    },
+
+                    }, {
+                    name: 'Diane Arbus',
+                     x: 1971,
+                    y: 48,
+                    profession: 'Photographer',
+                    marker: {
+                        symbol: 'url(images/diane-arbus-s.png)'
+                    },
+
+                    }, {
+                    name: 'Dorothy Dandridge',
+                     x: 1965,
+                    y: 42,
+                    profession: 'Actress',
+                    marker: {
+                        symbol: 'url(images/dorothy-dandridge-s.png)'
+                    },
+
+                    }, {
+                    name: 'George Hickenlooper',
+                     x: 2010,
+                    y: 47,
+                    profession: 'Filmmaker',
+                    marker: {
+                        symbol: 'url(images/hickenlooper-s.png)'
+                    },
+
+                    }, {
+                    name: 'Gertrude Bell',
+                     x: 1926,
+                    y: 57,
+                    profession: 'Writer',
+                    marker: {
+                        symbol: 'url(images/bell-s.png)'
+                    },
+
+
+                    }, {
+                    name: 'James Leo Herlihy',
+                     x: 1993,
+                    y: 55,
+                    profession: 'Writer',
+                    marker: {
+                        symbol: 'url(images/james-leo-s.png)'
+                    },
+                }],
+            marker: {
+                enabled: true,
+               
+            },
+           
+            
+
+        },
+
+        {
+            name: 'Cocaine',
+            type: 'spline',
+            color: 'rgba(220, 240, 240,.9)',
+            yAxis: 1,
+            data: [{
+                    name: 'Rainer Werner Fassbinder',
+                     x: 1982,
+                    y: 37,
+                    profession: 'Filmmaker',
+                    photo: "Aimee_Semple.jpg",
+                    marker: {
+                        symbol: 'url(images/rainer-werner-fassbinder-s.png)',
+
+                    }
+                }, {
+                    name: 'Bam Bam Bigelow',
+                     x: 2007,
+                    y: 45,
+                    profession: 'Wrestler',
+                    photo: "jay-reatard.jpg",
+                    marker: {
+                        symbol: 'url(images/bam-bam-s.png)'
+                    },
+                }],
+            marker: {
+                enabled: true,
+               
+            },
+            
+
+        },
+
+        {
+            name: 'Combinations/Complications',
+            type: 'spline',
+            color: 'rgba(242, 62, 71,.8)',
+            yAxis: 1,
+            data: [{
+                    name: 'Barbette',
+                     x: 1973,
+                    y: 74,
+                    profession: 'Trapeze artist',
+                    photo: "Aimee_Semple.jpg",
+                    marker: {
+                        symbol: 'url(images/barbette-s.png)',
+
+                    }
+                }, {
+                    name: 'Jay Reatard',
+                     x: 2010,
+                    y: 29,
+                    profession: 'Musican',
+                    photo: "jay-reatard.jpg",
+                    marker: {
+                        symbol: 'url(images/jay-reatard-s.png)'
+                    },
+
+                    }, {
+                    name: 'Jimi Hendrix',
+                     x: 1970,
+                    y: 27,
+                    profession: 'Musican',
+                    photo: "jay-reatard.jpg",
+                    marker: {
+                        symbol: 'url(images/hendrix-s.png)'
+                    },
+                }],
+            marker: {
+                enabled: true,
+               
+            },
+            
+
+        },
+         {
+            name: 'Recovered',
+            type: 'area',
+            yAxis: 1,
+            color: 'rgb(30, 190, 188)',
+            data: [{
+                    name: 'Tom Waits',
+                     x: 1996,
+                    y: 65,
+                    profession: 'Musican',
+                    photo: "tom-waits.jpg",
+                    marker: {
+                        symbol: 'url(images/tom-waits-s.png)',
+
+                    }/*
+                }, {
+                    name: 'F Scott. Fitzgerlad',
+                     x: 1920,
+                    y: 42,
+                    marker: {
+                        symbol: 'url(http://www.highcharts.com/demo/gfx/sun.png)'
+                    },
+
+                    }, {
+                    name: 'F Scott. Fitzgerlad',
+                     x: 1940,
+                    y: 42,
+                    marker: {
+                        symbol: 'url(http://www.highcharts.com/demo/gfx/sun.png)'
+                    },*/
+                }], 
+        
+        }]
+    });
+});
+    
+
+		</script>
+	</head>
+	<body>
+<script src="js/highcharts.js"></script>
+<script src="js/modules/exporting.js"></script>
+
+<header>
+<h1>Vects, Drugs, &amp; Plots n'Polls</h1>
+<h2>A visual recording of high-profile addiction. </h2>
+</header>
+
+<div class="container">
+<div id="container" style="height: 400px; width: 1200px"></div>
+<p>Normally, both your asses would be dead as fucking fried chicken, but you happen to pull this shit while I'm in a transitional period so I don't wanna kill you, I wanna help you. But I can't give you this case, it don't belong to me. Besides, I've already been through too much shit this morning over this case to hand it over to your dumb ass.</p>
+</div>
+	</body>
+</html>
