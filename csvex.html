@@ -149,23 +149,35 @@ $(function () {
            
             },
         }],
-        /*
-      tooltip: {
-                    useHTML: true,
-                    formatter: function() {
-                    var s = '<' + this.x + '</td>'
-                + '<td>' + this.y + '</td></tr><tr><td>uh</td><td>oh</td></tr></table>';
+        
+        tooltip: {
+            useHTML: true,
+            // headerFormat: '<h2 class="name" style="color: blue;opacity:0;">{point.null}</h2>',
+            // pointFormat: '<div><h2 class="profession">{point.profession}</h2><br>' + 
+            // '<h2 class="profession">{point.profession}</h2>' +'<h3 class="name">{point.name}</h3>'+ '<br>' +'<h3>Age:{point.y} </h3> </div>',
+            formatter: function() {
 
-                        return s;
-        }*/
+               var markup = '<h2>' + this.point.name + '</h2>' +
+                '<img src="' + this.point.photo + '" title="" alt="" border="0" height="50" width="50">' +
+                '<div>' +
+                    // '<h2 class="profession">' + this.point.profession + '</h2><br>';
+                    '<h2 class="profession">' + this.point.profession + '</h2>' + 
+                    '<h3 class="name">' + this.point.name + '</h3><br>' + 
+                    '<h3>Age:' + this.point.y + '</h3>' + 
+                '</div>';
 
+
+                return markup 
+
+            },
+            // valueDecimals: 2
+        },
   
-      tooltip: {
-               headerFormat: '<h2 class="name" style="color: blue;opacity:0;">{point.null}</h2>',
-                pointFormat: '<div><h2 class="profession">{point.profession}</h2><br>' + '<h2 class="profession">{point.profession}</h2>' +'<h3 class="name">{point.name}</h3>'+ '<br>' +'<h3>Age:{point.y} </h3> </div>',
-           
-            
-    },
+        // tooltip: {
+        //     headerFormat: '<h2 class="name" style="color: blue;opacity:0;">{point.null}</h2>',
+        //     pointFormat: '<div><h2 class="profession">{point.profession}</h2><br>' + 
+        //     '<h2 class="profession">{point.profession}</h2>' +'<h3 class="name">{point.name}</h3>'+ '<br>' +'<h3>Age:{point.y} </h3> </div>',
+        // },
 
         legend: {
             layout: 'horizontal',
