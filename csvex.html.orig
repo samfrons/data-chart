@@ -88,8 +88,13 @@ $(function () {
         },
       
         xAxis: [{
+<<<<<<< HEAD
                 type: 'datetime',
                 tickInterval: 10,
+=======
+                 minPadding: 0.05,
+            maxPadding: 0.05,
+>>>>>>> f0939d70d5e1da0ffba0437d2209fd67350a355c
                 title: {
                 enabled: true,
                 text: 'Year of Death'
@@ -625,7 +630,7 @@ $(function () {
 
                     }, {
                     name: 'James Leo Herlihy',
-                     x: 1993,
+                    x: 1993,
                     y: 55,
                     profession: 'Writer',
                     marker: {
@@ -746,7 +751,7 @@ $(function () {
                         symbol: 'url(images/mainwaring-s.png)'
                     },
 
-                    
+
 
 
                 }],
