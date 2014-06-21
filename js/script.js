@@ -2,8 +2,15 @@ $(function () {
     $('#container').highcharts({
         chart: {
             zoomType: 'xy',
-            type: 'area'
+            type: 'area',
+
         },
+         title: {
+
+                text: 'Timeline of Drug-Related Deaths'
+
+            },
+
       
         xAxis: [{
                 type: 'datetime',
@@ -81,7 +88,7 @@ $(function () {
                     '<p class="bio">' +this.point.bio + '</p>' +
                     '<h4 class="age">Age:<span class="space"></span>' + this.point.y + '</h4>' +
                     '<h4 class="year">Year of Death:' + this.point.x + '</h4>' + 
-                    '<a href= " '+ this.point.link +' " + target="_blank"> Read more </a>' +
+                    '<a class="more btn btn-1 btn-1c" href= " '+ this.point.link +' " + target="_blank"> Read more </a>' +
 
                 '</div>';
 
@@ -119,7 +126,7 @@ $(function () {
           name: 'Alcohol',
           type: 'scatter', 
           lineWidth: 0,
-          color: 'rgba(0, 136, 204,.8)',
+          color: 'rgba(5, 219, 194,1)',
           yAxis: 1,
           marker: {
                       symbol: 'circle',
@@ -201,7 +208,7 @@ $(function () {
                   x: 1987,
                   y: 48,
                   profession: 'Buddhist Meditation Master',
-                  photo: "images/photos/trungpa-s.png",
+                  photo: "images/photos/trungpa.jpg",
                   link: "http://en.wikipedia.org/wiki/Ch%C3%B6gyam_Trungpa",
                   marker: {
                       symbol: 'url(images/c-trungpa-s.png)',
@@ -382,10 +389,10 @@ $(function () {
                   x: 2013,
                   y: 71,
                   profession: 'Musician, the Velvet Underground',
-                  photo: "images/photos/reed.jpg",
+                  photo: "images/photos/l-reed.jpg",
                   link: "http://en.wikipedia.org/wiki/lou_reed",
                   marker: {
-                      symbol: 'url(images/reed-s.png)'
+                      symbol: 'url(images/l-reed-s.png)'
                   },
 
                   }, {
@@ -426,10 +433,10 @@ $(function () {
                   x: 1999,
                   y: 61,
                   profession: "English Actor",
-                  photo: "images/photos/Reed.jpg",
+                  photo: "images/photos/o-Reed.jpg",
                   link: "http://en.wikipedia.org/wiki/Oliver_Reed",
                   marker: {
-                      symbol: 'url(images/reed-s.png)'
+                      symbol: 'url(images/o-reed-s.png)'
                   },
                     }, {
                   name: 'Phil Katz',
@@ -552,6 +559,160 @@ $(function () {
       }, 
 
 ///////////////////////////////// HEROIN
+       {
+           name: 'Heroin',
+           type: 'scatter', 
+           lineWidth: 0,
+           color: 'rgba(40,40,40,.8',
+           yAxis: 1,
+           data: [{
+                   name: 'Janis Joplin',
+                   x: 1970,
+                   y: 27,
+                   profession: 'American Singer/Songwriter',
+                   photo: "images/Joplin.jpg",
+                   link: "http://en.wikipedia.org/wiki/Janis_Joplin",
+                   marker: {
+                       symbol: 'url(images/joplin-s.png)',
+
+                   },
+               },
+               {
+                   name: 'Jean Michel Basquiat',
+                   x: 1988,
+                   y: 27,
+                   profession: 'American Artist, SAMO',
+                   photo: "images/Basquiat.jpg",
+                   link: "http://en.wikipedia.org/wiki/Basquiat",
+                   marker: {
+                       symbol: 'url(images/Jean-Michel_Basquiat-s.png)',
+
+                   }
+               }, {
+                   name: 'River Phoenix',
+                   x: 1993,
+                   y: 23,
+                   profession: 'American Actor, Young Indy',
+                   photo: "images/Phoenix.jpg",
+                   link: "http://en.wikipedia.org/wiki/River_Phoenix",
+                   marker: {
+                       symbol: 'url(images/river-phoenix-s.png)'
+                   }
+
+                   }, {
+                   name: 'Jim Morrison',
+                   x: 1971,
+                   y: 27,
+                   profession: 'American Singer and Poet',
+                   photo: "images/Morrison.jpg",
+                   link: "http://en.wikipedia.org/wiki/Jim_Morrison",
+                   marker: {
+                       symbol: 'url(images/jim-morisson-s.png)'
+                   },
+                    }, {
+                   name: 'Chet Baker',
+                   x: 1988,
+                   y: 58,
+                   profession: 'American Jazz Trumpeter',
+                   photo: "images/Baker.jpg",
+                   link: "http://en.wikipedia.org/wiki/Chet_Baker",
+                 
+                   marker: {
+                       symbol: 'url(images/chet-baker-s.png)'
+                   },
+                    }, {
+                   name: 'Coco Chanel',
+                   x: 1971,
+                   y: 87,
+                   profession: 'French Fashion Designer',
+                   photo: "images/Chanel.jpg",
+                   link: "http://en.wikipedia.org/wiki/Coco_Chanel",
+                 
+                   marker: {
+                       symbol: 'url(images/coco-chanel-s.png)'
+                   },
+
+                   }, {
+                   name: 'Gia Carangi',
+                   x: 1986,
+                   y: 26,
+                   profession: 'American Fasion Model',
+                   photo: "images/Carangi.jpg",
+                   link: "http://en.wikipedia.org/wiki/Gia_Carangi",
+                 
+                   marker: {
+                       symbol: 'url(images/gia-s.png)'
+                   },
+                   }, {
+                   name: 'Brett Whiteley',
+                   x: 1992,
+                   y: 53,
+                   profession: 'Australian avant-garde Artist',
+                   photo: 'images/Whiteley.jpg',
+                   link: 'http://en.wikipedia.org/wiki/Brett_Whiteley',
+                 
+                   marker: {
+                       symbol: 'url(images/whiteley-s.png)'
+                   },
+                     }, {
+                   name: 'Elisa Bridges',
+                   x: 2002,
+                   y: 28,
+                   profession: 'Playboy Model',
+                   photo: "images/Bridges.jpg",
+                   link: "http://en.wikipedia.org/wiki/Elisa_Bridges",
+                 
+                   marker: {
+                       symbol: 'url(images/bridges-s.png)'
+                   },
+                    }, {
+                   name: 'Eugene Lipscomb',
+                   x: 1963,
+                   y: 31,
+                   profession: "NFL Lineman, MVP, 'Big Daddy'",
+                   photo: "images/Lipscomb.jpg",
+                   link: "http://en.wikipedia.org/wiki/Eugene_Lipscomb",
+                 
+                   marker: {
+                       symbol: 'url(images/Lipscomb-s.png)'
+                   },
+
+                   }, {
+                   name: 'Frankie Lymon',
+                   x: 1968,
+                   y: 25,
+                   profession: 'Boy-soprano in The Teenagers',
+                   photo: "images/Lymon.jpg",
+                   link: "http://en.wikipedia.org/wiki/Frankie_Lymon",
+                 
+                   marker: {
+                       symbol: 'url(images/Lymon-s.png)'
+                   },
+                   }, {
+                   name: 'Eric Show',
+                   x: 1994,
+                   y: 37,
+                   profession: 'MLB Pitcher- Padres, Athletics',
+                   photo: 'images/Show.jpg',
+                   link: 'http://en.wikipedia.org/wiki/Eric_Show',
+                 
+                   marker: {
+                       symbol: 'url(images/Show-s.png)'
+                   },
+
+
+
+
+               }],
+           marker: {
+               enabled: true,
+               symbol: 'circle'
+              
+           },
+          
+        
+       },
+///////////////////////////////// PILLS
       {
            name: 'Pills',
            type: 'scatter', 
@@ -592,7 +753,7 @@ $(function () {
                    photo: "images/photos/Blandick.jpg",
                    link: "http://en.wikipedia.org/wiki/Clara_Blandick",
                    marker: {
-                       symbol: 'url(images/c-blandick-s.png)',
+                       symbol: 'url(images/blandick-s.png)',
 
                    }
                },
@@ -794,7 +955,7 @@ $(function () {
                     x: 1982,
                    y: 37,
                    profession: 'Prolific German Filmmaker',
-                   photo: "images/photos/Fassbinder.jpg",
+                   photo: "images/Fassbinder.jpg",
                    link: "http://en.wikipedia.org/wiki/Fassbinder",
                    marker: {
                        symbol: 'url(images/rainer-werner-fassbinder-s.png)',
@@ -805,7 +966,7 @@ $(function () {
                     x: 2007,
                    y: 45,
                    profession: 'WWF Wrestler, BAM!',
-                   photo: "images/photos/Bigelow.jpg",
+                   photo: "images/Bigelow.jpg",
                    link: "http://en.wikipedia.org/wiki/Bam_Bam_Bigelow",
                    marker: {
                        symbol: 'url(images/bam-bam-s.png)'
@@ -818,20 +979,20 @@ $(function () {
                     x: 2002,
                    y: 50,
                    profession: 'MLB Catcher',
-                   photo: "images/photos/Porter.jpg",
+                   photo: "images/Porter.jpg",
                    link: "http://en.wikipedia.org/wiki/Darrell_Porter",
                    marker: {
                        symbol: 'url(images/d-porter-s.png)'
                    },
 
-                     },
+                    },
 
                    {
                    name: 'David Ruffin',
                     x: 1991,
                    y: 50,
                    profession: 'Musician/Singer,The Temptations',
-                   photo: "images/photos/ruffin.jpg",
+                   photo: "images/ruffin.jpg",
                    link: "http://en.wikipedia.org/wiki/David_Ruffin",
                    marker: {
                        symbol: 'url(images/d-ruffin-s.png)'
@@ -844,30 +1005,31 @@ $(function () {
                     x: 1996,
                    y: 52,
                    profession: 'Producer of Top Gun, The Rock',
-                   photo: "images/photos/d-Simpson.jpg",
+                   photo: "images/d-Simpson.jpg",
                    link: "http://en.wikipedia.org/wiki/Don_Simpson",
                    marker: {
                        symbol: 'url(images/d-simpson-s.png)'
                    },
 
-                   },
+                    },
                     {
                    name: 'Billy Mays',
                     x: 2009,
                    y: 50,
                    profession: 'Entrepreneur/Salesman, OxiClean',
-                   photo: "images/photos/mays.jpg",
+                   photo: "images/mays.jpg",
                    link: "http://en.wikipedia.org/wiki/Billy_Mays",
                    marker: {
-                       symbol: 'url(images/may-s.png)'
+                       symbol: 'url(images/mays-s.png)'
                    },
+
                    },
                     {
                    name: 'Andy Gibb',
                     x: 1988,
                    y: 30,
                    profession: 'English Singer, Teen Idol',
-                   photo: "images/photos/gibb.jpg",
+                   photo: "images/gibb.jpg",
                    link: "http://en.wikipedia.org/wiki/Andy_Gibb",
                    marker: {
                        symbol: 'url(images/gibb-s.png)'
@@ -879,24 +1041,222 @@ $(function () {
                     x: 1997,
                    y: 33,
                    profession: 'Hilarious Comedian, Tommy Boy',
-                   photo: "images/photos/Farley.jpg",
+                   photo: "images/Farley.jpg",
                    link: "http://en.wikipedia.org/wiki/Chris_Farley",
                    marker: {
                        symbol: 'url(images/farley-s.png)'
                    },
-
-
                    },
                     {
                    name: 'Chris Mainwaring',
                     x: 2007,
                    y: 41,
                    profession: 'Aussie Rules Footballer',
-                   photo: "images/photos/Mainwaring.jpg",
+                   photo: "images/Mainwaring.jpg",
                    link: "http://en.wikipedia.org/wiki/Chris_Mainwaring",
                    marker: {
                        symbol: 'url(images/mainwaring-s.png)'
                    },
+
+                    },
+
+                   {
+                   name: 'Bill Hicks',
+                    x: 1994,
+                   y: 32,
+                   profession: 'Stand-up Comedian, Spaceman',
+                   photo: "images/Hicks.jpg",
+                   link: "http://en.wikipedia.org/wiki/Bill_Hicks",
+                   marker: {
+                       symbol: 'url(images/Hicks-s.png)'
+                   },
+
+                   },
+
+                   {
+                   name: 'Christopher Bowman',
+                    x: 2008,
+                   y: 40,
+                   profession: 'American Figure Skater,Olympian',
+                   photo: "images/Bowman.jpg",
+                   link: "http://en.wikipedia.org/wiki/Christopher_Bowman",
+                   marker: {
+                       symbol: 'url(images/Bowman-s.png)'
+                   },
+                   },
+                    {
+                   name: 'Georg Trakl',
+                    x: 1914,
+                   y: 27,
+                   profession: 'Austrian Poet, Expressionist',
+                   photo: "images/Trakl.jpg",
+                   link: "http://en.wikipedia.org/wiki/Georg_Trakl",
+                   marker: {
+                       symbol: 'url(images/Trakl-s.png)'
+                   },
+                   },
+                    {
+                   name: 'Ike Turner',
+                    x: 2007,
+                   y: 76,
+                   profession: 'of Ike and Tina, Scary Man',
+                   photo: "images/turner.jpg",
+                   link: "http://en.wikipedia.org/wiki/Ike_Turner",
+                   marker: {
+                       symbol: 'url(images/Turner-s.png)'
+                   },
+
+                   },
+                    {
+                   name: 'Jacques Damala',
+                    x: 1889,
+                   y: 34,
+                   profession: 'Greek Actor in France, Hedonist',
+                   photo: "images/Damala.jpg",
+                   link: "http://en.wikipedia.org/wiki/Jacques_Damala",
+                   marker: {
+                       symbol: 'url(images/damala-s.png)'
+                   },
+
+
+                   },
+                    {
+                   name: 'John Entwistle',
+                    x: 2002,
+                   y: 57,
+                   profession: "The Who's bassist",
+                   photo: "images/Entwistle.jpg",
+                   link: "http://en.wikipedia.org/wiki/John_Entwistle",
+                   marker: {
+                       symbol: 'url(images/Entwistle-s.png)'
+                   },
+
+                   },
+                    {
+                   name: 'Len Bias',
+                    x: 1986,
+                   y: 22,
+                   profession: "Greatest NBA Player Who Didn't",
+                   photo: "images/Bias.jpg",
+                   link: "http://en.wikipedia.org/wiki/Len_Bias",
+                   marker: {
+                       symbol: 'url(images/bias-s.png)'
+                   },
+
+                     },
+
+                   {
+                   name: 'Marco Pantani',
+                    x: 2004,
+                   y: 34,
+                   profession: 'Famed Italian Cyclist, Champion',
+                   photo: "images/Pantani.jpg",
+                   link: "http://en.wikipedia.org/wiki/Marco_Pantani",
+                   marker: {
+                       symbol: 'url(images/Pantani-s.png)'
+                   },
+                    },
+
+                   {
+                   name: "Ol'_Dirty_Bastard",
+                    x: 2004,
+                   y: 35,
+                   profession: 'Outrageously Profane Wu-Tang-er',
+                   photo: "images/bastard.jpg",
+                   link: "http://en.wikipedia.org/wiki/Ol'_Dirty_Bastard",
+                   marker: {
+                       symbol: 'url(images/bastard-s.png)'
+                   },
+
+                     },
+                    {
+                   name: 'Richard Manuel',
+                    x: 1986,
+                   y: 42,
+                   profession: 'Canadian Musician in The Band',
+                   photo: "images/Manuel.jpg",
+                   link: "http://en.wikipedia.org/wiki/Richard_Manuel",
+                   marker: {
+                       symbol: 'url(images/Manuel-s.png)'
+                   },
+                   },
+                    {
+                   name: 'Rod Scurry',
+                    x: 1992,
+                   y: 36,
+                   profession: 'MLB Pitcher, Pirate, Yankee',
+                   photo: "images/Scurry.jpg",
+                   link: "http://en.wikipedia.org/wiki/Rod_Scurry",
+                   marker: {
+                       symbol: 'url(images/Scurry-s.png)'
+                   },
+
+                 },
+                    {
+                   name: 'Shannon Hoon',
+                    x: 1995,
+                   y: 28,
+                   profession: 'Singer of Blind Melon',
+                   photo: "images/Hoon.jpg",
+                   link: "http://en.wikipedia.org/wiki/Shannon_Hoon",
+                   marker: {
+                       symbol: 'url(images/Hoon-s.png)'
+                   },
+
+                   },
+                    {
+                   name: 'Ted Demme',
+                    x: 2002,
+                   y: 38,
+                   profession: "Filmmaker, Director of 'Blow'",
+                   photo: "images/Demme.jpg",
+                   link: "http://en.wikipedia.org/wiki/Ted_Demme",
+                   marker: {
+                       symbol: 'url(images/Demme-s.png)'
+                   },
+ },
+                    {
+                   name: 'Patrick Bissell',
+                    x: 1987,
+                   y: 30,
+                   profession: 'Dancer, American Ballet Theatre',
+                   photo: "images/Bissell.jpg",
+                   link: "http://en.wikipedia.org/wiki/Patrick_Bissell",
+                   marker: {
+                       symbol: 'url(images/Bissell-s.png)'
+                   },
+
+                   },
+                    {
+                   name: 'Whiney Houston',
+                    x: 2012,
+                   y: 48,
+                   profession: 'American Singer',
+                   photo: "images/w-Houston.jpg",
+                   link: "http://en.wikipedia.org/wiki/Whitney_Houston",
+                   marker: {
+                       symbol: 'url(images/w-Houston-s.png)'
+                   },
+
+
+                   },
+                    {
+                   name: 'Zoë Tamerlis Lund',
+                    x: 2002,
+                   y: 38,
+                   profession: "American Actress, Model, Ms.45",
+                   photo: "images/Lund.jpg",
+                   link: "http://en.wikipedia.org/wiki/Zo%C3%AB_Tamerlis_Lund",
+                   marker: {
+                       symbol: 'url(images/Lund-s.png)'
+                   },
+
+
+
+
+
+                   
+
 
 
                
@@ -921,7 +1281,7 @@ $(function () {
                     x: 1973,
                    y: 74,
                    profession: 'American Trapeze Artist',
-                   photo: "images/photos/barette.jpg",
+                   photo: "images/photos/barbette.jpg",
                    link: "http://en.wikipedia.org/wiki/Barbette_(performer)",
                    marker: {
                        symbol: 'url(images/barbette-s.png)',
@@ -1092,32 +1452,350 @@ $(function () {
            yAxis: 1,
            data: [
 
-           {
-                   name: 'Barbette',
-                   x: 1973,
-                   y: 74,
-                   profession: 'Trapeze artist',
-                   photo: "barette.jpg",
-                   bio: "Barbette was an American female impersonator, high-wire performer, and trapeze artist born in Texas.",
-                   link: "http://wikipedia.org/",
+     {
+                   name: 'Beverly Sills',
+                   x: 2007,
+                   y: 76,
+                   profession: 'Brooklyn-born Operatic Soprano',
+                   photo: "images/Sills.jpg",
+                
+                   link: "http://en.wikipedia.org/wiki/Beverly_Sills",
 
                    marker: {
-                       symbol: 'url(images/barbette-s.png)'
-                           }
+                       symbol: 'url(images/Sills-s.png)'
+                
+                       },
                },
 
 
+      {
+                   name: 'Paul Newman',
+                    x: 2008,
+                   y: 83,
+                   profession: 'Actor, Yalie, Racer, Founder',
+                   photo: "images/Newman.jpg",
+                   link: "http://en.wikipedia.org/wiki/Paul_Newman",
+
+
+                   marker: {
+                       symbol: 'url(images/Newman-s.png)'
+                           },
+                   },
             {
-                   name: 'Barbette',
-                    x: 1973,
-                   y: 74,
-                   profession: 'Trapeze artist',
-                   photo: "Aimee_Semple.jpg",
+                   name: 'Yul Brynner',
+                    x: 1985,
+                   y: 65,
+                   profession: 'King of Siam, RobotCowboy, Bald',
+                   photo: "images/Brynner.jpg",
+                   link: "http://en.wikipedia.org/wiki/Yul_Brynner",
                    marker: {
-                       symbol: 'url(images/barbette-s.png)'
-                           }
+                       symbol: 'url(images/Brynner-s.png)'
+                   },
                },
 
+                {
+                   name: 'Desi Arnaz',
+                    x: 1986,
+                   y: 69,
+                   profession: 'Cuban-Am Actor, Ricky Ricardo',
+
+                   photo: "images/Arnaz.jpg",
+                   link: "http://en.wikipedia.org/wiki/Desi_Arnaz",
+                   marker: {
+                       symbol: 'url(images/Arnaz-s.png)'
+                   },
+               },
+
+                 {
+                   name: 'Bill Blass',
+                    x: 2002,
+                   y: 79,
+                   profession: 'Fashion Designer',
+                   photo: "images/Blass.jpg",
+                   link: "http://en.wikipedia.org/wiki/Bill_Blass",
+                   marker: {
+                       symbol: 'url(images/blass-s.png)'
+                   },
+               },
+
+               {
+                   name: 'Edward R. Murrow',
+                    x: 1965,
+                   y: 57,
+                   profession: 'Pioneering TV-Journalist',
+                   photo: "images/Murrow.jpg",
+                   link: "http://en.wikipedia.org/wiki/Edward_R._Murrow",
+                   marker: {
+                       symbol: 'url(images/Murrow-s.png)'
+                   },
+               },
+
+               {
+                   name: 'Moe Howard',
+                    x: 1975,
+                   y: 77,
+                   profession: 'Leader of Stooges,Poker of Eyes',
+                   photo: "images/howard.jpg",
+                   link: "http://en.wikipedia.org/wiki/Moe_Howard",
+                   marker: {
+                       symbol: 'url(images/Howard-s.png)'
+                   },
+               },
+
+               {
+                   name: 'Susan Hayward',
+                   x: 1975,
+                   y: 57,
+                   profession: 'Academy Award Winning Actress',
+                   photo: "images/Hayward.jpg",
+                
+                   link: "http://en.wikipedia.org/wiki/Susan_Hayward",
+
+                   marker: {
+                       symbol: 'url(images/Hayward-s.png)'
+                
+                       },
+               },
+
+               {
+                   name: 'George Harrison',
+                    x: 2008,
+                   y: 83,
+                   profession: 'Beatle, Wilbury, Film Producer',
+                   photo: "images/Harrison.jpg",
+                   link: "http://en.wikipedia.org/wiki/George_Harrison",
+
+
+                   marker: {
+                       symbol: 'url(images/Harrison-s.png)'
+                           },
+                   },
+            
+                {
+                   name: 'Dashiell Hammett',
+                    x: 1961,
+                   y: 66,
+                   profession: 'Hard-boiled Detective Novelist',
+                   photo: "images/Hammett.jpg",
+                   link: "http://en.wikipedia.org/wiki/Dashiell_Hammett",
+                   marker: {
+                       symbol: 'url(images/Hammett-s.png)'
+                   },
+               },
+
+                {
+                   name: 'Betty Grable',
+                    x: 1973,
+                   y: 56,
+                   profession: 'Hollywood Actress, Nice Legs',
+
+                   photo: "images/Grable.jpg",
+                   link: "http://en.wikipedia.org/wiki/Betty_Grable",
+                   marker: {
+                       symbol: 'url(images/Grable-s.png)'
+                   },
+               },
+
+               {
+                   name: 'Roberto Goizueta',
+                    x: 1997,
+                   y: 65,
+                   profession: 'CEO of The Coca-Cola Company',
+                   photo: "images/Goizueta.jpg",
+                   link: "http://en.wikipedia.org/wiki/Roberto_Goizueta",
+                   marker: {
+                       symbol: 'url(images/Goizueta-s.png)'
+                   },
+               },
+
+                {
+                   name: 'Ulysses S. Grant',
+                    x: 1885,
+                   y: 63,
+                   profession: 'Dude on the $50 Bill',
+                   photo: "images/Grant.jpg",
+                   link: "http://en.wikipedia.org/wiki/Ulysses_S._Grant",
+                   marker: {
+                       symbol: 'url(images/Grant-s.png)'
+                   },
+               },
+
+               {
+                   name: 'Wilhelmina Cooper',
+                    x: 1980,
+                   y: 39,
+                   profession: 'Dutch Model, Founder',
+                   photo: "images/w-Cooper.jpg",
+                   link: "http://en.wikipedia.org/wiki/Wilhelmina_Cooper",
+                   marker: {
+                       symbol: 'url(images/w-Cooper-s.png)'
+                   },
+               },
+ {
+                   name: 'Gary Cooper',
+                    x: 1961,
+                   y: 60,
+                   profession: 'Academy Award Winning Actor',
+                   photo: "images/g-Cooper.jpg",
+                   link: "http://en.wikipedia.org/wiki/Gary_Cooper",
+
+
+                   marker: {
+                       symbol: 'url(images/g-cooper-s.png)'
+                           },
+                   },
+            
+                {
+                   name: 'Chuck Connors',
+                    x: 1992,
+                   y: 71,
+                   profession: 'Actor, Rifleman, MLB+NBA Player',
+                   photo: "images/Connors.jpg",
+                   link: "http://en.wikipedia.org/wiki/Chuck_Connors",
+                   marker: {
+                       symbol: 'url(images/Connors-s.png)'
+                   },
+               },
+
+                {
+                   name: 'Nat King Cole',
+                    x: 1965,
+                   y: 45,
+                   profession: 'American Singer and Musician',
+
+                   photo: "images/cole.jpg",
+                   link: "http://en.wikipedia.org/wiki/Nat_King_Cole",
+                   marker: {
+                       symbol: 'url(images/cole-s.png)'
+                   },
+               },
+
+                {
+                   name: 'James Baldwin',
+                    x: 1987,
+                   y: 63,
+                   profession: 'Harlem-born Author of NativeSon',
+                   photo: "images/Baldwin.jpg",
+                   link: "http://en.wikipedia.org/wiki/James_Baldwin",
+                   marker: {
+                       symbol: 'url(images/baldwin-s.png)'
+                   },
+               },
+
+                {
+                   name: 'Lucille Ball',
+                    x: 1989,
+                   y: 77,
+                   profession: 'Comedienne, Actress, "Lucy"',
+                   photo: "images/Ball.jpg",
+                   link: "http://en.wikipedia.org/wiki/Lucille_Ball",
+                   marker: {
+                       symbol: 'url(images/Ball-s.png)'
+                   },
+               },
+
+               {
+                   name: 'Walt Disney',
+                    x: 1966,
+                   y: 65,
+                   profession: 'Cultural Icon, Entrepreneur',
+                   photo: "images/Disney.jpg",
+                   link: "http://en.wikipedia.org/wiki/Walt_Disney",
+                   marker: {
+                       symbol: 'url(images/Disney-s.png)'
+                   },
+               },
+
+               {
+                   name: 'Humphrey Bogart',
+                   x: 1957,
+                   y: 57,
+                   profession: "Really, don't Bogart that joint",
+                   photo: "images/Bogart.jpg",
+                
+                   link: "http://en.wikipedia.org/wiki/Bogart",
+
+                   marker: {
+                       symbol: 'url(images/Bogart-s.png)'
+                
+                       },
+               },
+
+               {
+                   name: 'Hal Ashby',
+                    x: 1988,
+                   y: 59,
+                   profession: "'New Hollywood' Director",
+                   photo: "images/Ashby.jpg",
+                   link: "http://en.wikipedia.org/wiki/Hal_Ashby",
+
+
+                   marker: {
+                       symbol: 'url(images/Ashby-s.png)'
+                           },
+                   },
+
+                {
+                   name: 'Carl Wilson',
+                    x: 1998,
+                   y: 51,
+                   profession: 'Beach Boy',
+                   photo: "images/c-wilson.jpg",
+                   link: "http://en.wikipedia.org/wiki/Carl_Wilson",
+                   marker: {
+                       symbol: 'url(images/c-wilson-s.png)'
+                   },
+               },
+
+                {
+                   name: 'Tallulah Bankhead',
+                    x: 1968,
+                   y: 66,
+                   profession: 'Hollywood Actress',
+
+                   photo: "images/Bankhead.jpg",
+                   link: "http://en.wikipedia.org/wiki/Tallulah_Bankhead",
+                   marker: {
+                       symbol: 'url(images/Bankhead-s.png)'
+                   },
+               },
+
+               {
+                   name: 'Sammy Davis Jr.',
+                    x: 1990,
+                   y: 64,
+                   profession: 'American Entertainer',
+                   photo: "images/davis.jpg",
+                   link: "http://en.wikipedia.org/wiki/Sammy_Davis,_Jr.",
+                   marker: {
+                       symbol: 'url(images/davis-s.png)'
+                   },
+               },
+
+                {
+                   name: 'Duke Ellington',
+                    x: 1974,
+                   y: 75,
+                   profession: 'American Composer, Bandleader',
+                   photo: "images/Ellington.jpg",
+                   link: "http://en.wikipedia.org/wiki/Duke_Ellington",
+                   marker: {
+                       symbol: 'url(images/Ellington-s.png)'
+                   },
+               },
+
+               {
+                   name: 'Lorraine Hansberry',
+                    x: 1965,
+                   y: 34,
+                   profession: 'Playwright, A Raisin in the Sun',
+                   photo: "images/Hansberry.jpg",
+                   link: "http://en.wikipedia.org/wiki/Lorraine_Hansberry",
+                   marker: {
+                       symbol: 'url(images/Hansberry-s.png)'
+                   },
+               },
+            
 
 
                ]
@@ -1161,8 +1839,8 @@ $(function () {
             },
 
             title: {
-
-                text: 'Occupation Breakdown'
+                enabled: false,
+                text: null,
 
             },
 
