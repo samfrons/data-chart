@@ -24,6 +24,10 @@
 
         }
 
+        .photo {
+            border-radius: 10px;
+        }
+
         .row2 {
             width: 1220px;
         }
@@ -153,7 +157,7 @@ $(function () {
             formatter: function() {
 
                var markup = '<h3>' + this.point.name + '</h3>' +
-                '<img src="' + this.point.photo + '" title="" alt="" border="0" height="50" width="50">' +
+                '<img class="photo" src="' + this.point.photo + '" title="" alt="" border="0" height="50" width="50">' +
                 '<div>' +
                     // '<h2 class="profession">' + this.point.profession + '</h2><br>';
                     '<h4 class="profession">' + this.point.profession + '</h4>' + 
@@ -186,6 +190,8 @@ $(function () {
             symbolRadius: 10,
             backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor) || 'rgba(255,255,255,0)'
         },
+
+///////////////////////////////// ALCOHOL        
         series: [{
             name: 'Alcohol',
 
@@ -336,9 +342,11 @@ $(function () {
                         symbol: 'url(images/winehouse-s.png)'
                     },
                 }],
-            
 
-        }, {
+        }, 
+
+///////////////////////////////// HERION
+        {
             name: 'Herion',
             type: 'scatter', 
             lineWidth: 0,
@@ -430,7 +438,7 @@ $(function () {
            
          
         },
-
+///////////////////////////////// PILLS
         {
             name: 'Pills',
             type: 'scatter', 
@@ -636,7 +644,7 @@ $(function () {
             
 
         },
-
+///////////////////////////////// COCAINE
         {
             name: 'Cocaine',
             type: 'scatter', 
@@ -753,7 +761,7 @@ $(function () {
             
 
         },
-
+///////////////////////////////// COMBINATIONS
         {
             name: 'Combinations/Complications',
             type: 'scatter', 
@@ -923,7 +931,32 @@ $(function () {
                 symbol: 'circle'
                
             },
-        }],
+        },
+        ///////////////////////////////// TOBACCO
+        {
+            name: 'Tobacco',
+            type: 'scatter',
+            lineWidth: 0,
+            color: 'rgba(242, 62, 71,.8)',
+            yAxis: 1,
+            data: [{
+                    name: 'Barbette',
+                     x: 1973,
+                    y: 74,
+                    profession: 'Trapeze artist',
+                    photo: "Aimee_Semple.jpg",
+                    marker: {
+                        symbol: 'url(images/barbette-s.png)'
+                            }
+                }]
+            },
+      
+
+
+
+
+
+        ],
     });
 });
 
