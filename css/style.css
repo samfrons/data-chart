@@ -3,6 +3,7 @@ body {
             font-size: 66%;
             -webkit-font-smoothing: antialiased;
             overflow-x: hidden;
+            background: rgb(248, 248, 248);
         }
         header {
            width: 100%;
@@ -33,9 +34,20 @@ body {
             margin: 0 auto;
 
         }
-
+        .highcharts-tooltip > span {
+            
+            left: 8px !important;
+            width: 234px !important;
+            border-radius: 5px;
+            box-shadow: 0px 1px 3px rgba(51,51,51,.8);
+        }
         .Alcohol {
            
+        }
+
+        .tooltip {
+            background:  rgba(249, 249, 249, 0.95098);
+            padding: 10px;
         }
 
         .bio {
@@ -55,9 +67,10 @@ body {
         h1 {
             text-align: center;
             color: rgba(51,51,51,.8);
-            font-family: "Archer";
+            font-family: 'Lato', Calibri, Arial, sans-serif;
             font-size: 3em;
             margin-top: 2em;
+            font-weight: 300;
             margin-bottom: 0.5em;
         }
 
@@ -65,9 +78,9 @@ body {
             text-align: center;
             margin-top: 0;
             font-size: 2.5em;
-            font-family: "Archer";
-            color: rgba(51,51,51,.8);
-            font-weight: 500;
+            font-family: 'Lato', Calibri, Arial, sans-serif;
+            color: rgba(101,101,101,.8);
+            font-weight: 300;
         }
 
         .name {
@@ -75,10 +88,41 @@ body {
             opacity: 0;
         }
 
-        p {
-            font-family: sans-serif;
+        p.intro {
+            font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, Helvetica, sans-serif;
             font-size: 1.5em;
             clear: both;
+            color: rgba(51,51,51,.8);
+            margin: 2em 0 2em 0;
+
+        }
+        a {
+            text-decoration: none; 
+        }
+
+        a.quiz {
+            display: inline-block;
+background-color: rgb(34, 111, 190);
+border: 4px solid rgb(34, 111, 190);
+padding: 15px;
+margin: 10px;
+border-radius: 10px;
+position: relative;
+color: white;
+text-transform: uppercase;
+font-family: 'Lato', Calibri, Arial, sans-serif;
+
+        }
+
+.icon-arrow-right:before {
+    content: "\e00d";
+}
+
+.icon-arrow-left:before {
+    content: "\e003";
+}
+        a.quiz:hover {
+
         }
 
 
@@ -87,12 +131,15 @@ body {
                 }
 
                 #container {
-                   padding: 12px;
+                   border: 12px solid white;
                     margin-bottom: 50px;
                     overflow: visible !important;
                     min-height: 600px !important;
                     overflow: visible;
                     box-shadow: 0 1px 10px 1px rgba(58, 58, 58, 0.3)!important
+                }
+                #container:hover {
+                    cursor: pointer;
                 }
 
                 #container1, #container2 {
