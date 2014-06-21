@@ -7,7 +7,7 @@ $(function () {
         },
          title: {
 
-                text: 'Timeline of Drug-Related Deaths'
+                text: null
 
             },
 
@@ -549,6 +549,205 @@ $(function () {
                       symbol: 'url(images/holden-s.png)'
                   },
 
+                   }, {
+     name: 'Hubert Humphrey',
+     x: 1978,
+     y: 66,
+     profession: 'Vice President under Johnson',
+     photo: "images/Humphrey.jpg",
+     link: "http://en.wikipedia.org/wiki/Hubert_humphrey",
+     marker: {
+         symbol: 'url(images/Humphrey-s.png)'
+     },
+
+     }, {
+     name: 'Porfirio Rubirosa',
+     x: 1965,
+     y: 56,
+     profession: 'International Playboy',
+     photo: "images/Rubirosa.jpg",
+     link: "http://en.wikipedia.org/wiki/Porfirio_Rubirosa",
+     marker: {
+         symbol: 'url(images/Rubirosa-s.png)'
+     },
+ }, {
+     name: 'Franklin Pierce',
+     x: 1869,
+     y: 64,
+     profession: '14th Pres of the United States',
+     photo: "images/Pierce.jpg",
+     link: "http://en.wikipedia.org/wiki/Franklin_Pierce",
+     marker: {
+         symbol: 'url(images/Pierce-s.png)'
+     },
+
+      }, {
+     name: 'John Bonham',
+     x: 1980,
+     y: 32,
+     profession: 'Drummer of Led Zeppelin',
+     photo: "images/Bonham.jpg",
+     link: "http://en.wikipedia.org/wiki/John_Bonham",
+     marker: {
+         symbol: 'url(images/Bonham-s.png)'
+     },
+ }, {
+     name: 'Jackson Pollock',
+     x: 1956,
+     y: 44,
+     profession: 'Abstract Expressionist Painter',
+     photo: "images/Pollock.jpg",
+     link: "http://en.wikipedia.org/wiki/Jackson_Pollock",
+     marker: {
+         symbol: 'url(images/Pollock-s.png)'
+     },
+ }, {
+     name: 'Billy Martin',
+     x: 1989,
+     y: 61,
+     profession: 'Yankee Mgr,5x World Series Champ',
+     photo: "images/Martin.jpg",
+     link: "http://en.wikipedia.org/wiki/Billy_Martin",
+     marker: {
+         symbol: 'url(images/Martin-s.png)'
+     },
+ }, {
+     name: 'Jack Kerouac',
+     x: 1969,
+     y: 47,
+     profession: 'A Beat Poet who hit the Road',
+     photo: "images/Kerouac.jpg",
+     link: "http://en.wikipedia.org/wiki/Jack_Kerouac",
+     marker: {
+         symbol: 'url(images/Kerouac-s.png)'
+     },
+ }, {
+     name: 'John Wayne',
+     x: 1979,
+     y: 72,
+     profession: 'A Cowboy, A WarHero, A Searcher',
+     photo: "images/Wayne.jpg",
+     link: "http://en.wikipedia.org/wiki/John_Wayne",
+     marker: {
+         symbol: 'url(images/Wayne-s.png)'
+     },
+ }, {
+     name: 'Ernie Kovacs',
+     x: 1962,
+     y: 42,
+     profession: 'Uninhibited Unexpected Comedian',
+     photo: "images/Kovacs.jpg",
+     link: "http://en.wikipedia.org/wiki/Ernie_Kovacs",
+     marker: {
+         symbol: 'url(images/Kovacs-s.png)'
+     },
+
+     }, {
+     name: 'Erica Blasberg',
+     x: 2010,
+     y: 25,
+     profession: 'LPGA Golfer',
+     photo: "images/Blasberg.jpg",
+     link: "http://en.wikipedia.org/wiki/Erica Blasberg",
+     marker: {
+         symbol: 'url(images/Blasberg-s.png)'
+     },
+ }, {
+     name: 'Mickey Mantle',
+     x: 1995,
+     y: 63,
+     profession: '20xAll-Star, The Commerce Comet',
+     photo: "images/Mantle.jpg",
+     link: "http://en.wikipedia.org/wiki/Mickey_Mantle",
+     marker: {
+         symbol: 'url(images/Mantle-s.png)'
+     },
+ }, {
+     name: 'O. Henry',
+     x: 1910,
+     y: 47,
+     profession: 'American Writer',
+     photo: "images/Henry.jpg",
+     link: "http://en.wikipedia.org/wiki/O._Henry",
+     marker: {
+         symbol: 'url(images/Henry-s.png)'
+     },
+
+     }, {
+     name: 'Odas Moon',
+     x: 1937,
+     y: 44,
+     profession: 'American Aviation Pioneer',
+     photo: "images/o-moon.jpg",
+     link: "http://en.wikipedia.org/wiki/Odas_Moon",
+     marker: {
+         symbol: 'url(images/o-moon-s.png)'
+     },
+ }, {
+     name: 'George C. Scott',
+     x: 1999,
+     y: 77,
+     profession: 'Generals-Patton + Buck Turgidson',
+     photo: "images/scott.jpg",
+     link: "http://en.wikipedia.org/wiki/George_C._Scott",
+     marker: {
+         symbol: 'url(images/scott-s.png)'
+     },
+ }, {
+     name: 'Ron "Pigpen" McKernan',
+     x: 1973,
+     y: 27,
+     profession: 'Grateful Dead Founder, PIGPEN!',
+     photo: "images/McKernan.jpg",
+     link: "http://en.wikipedia.org/wiki/Ron_%22Pigpen%22_McKernan",
+     marker: {
+         symbol: 'url(images/McKernan-s.png)'
+     },
+
+      }, {
+     name: 'Steve Prefontaine',
+     x: 1975,
+     y: 24,
+     profession: 'American Runner and Olympian',
+     photo: "images/Prefontaine.jpg",
+     link: "http://en.wikipedia.org/wiki/Steve_Prefontaine",
+     marker: {
+         symbol: 'url(images/Prefontaine-s.png)'
+     },
+
+     }, {
+     name: 'Townes Van Zandt',
+     x: 1997,
+     y: 52,
+     profession: 'American Singer-Songwriter',
+     photo: "images/VanZandt.jpg",
+     link: "http://en.wikipedia.org/wiki/Townes_Van_Zandt#Death",
+     marker: {
+         symbol: 'url(images/VanZandt-s.png)'
+     },
+
+     }, {
+     name: 'Veronica Lake',
+     x: 1973,
+     y: 50,
+     profession: 'Blonde Bombshell',
+     photo: "images/Lake.jpg",
+     link: "http://en.wikipedia.org/wiki/Veronica_Lake",
+     marker: {
+         symbol: 'url(images/Lake-s.png)'
+     },
+
+     }, {
+     name: 'William Rowan Hamilton',
+     x: 1865,
+     y: 60,
+     profession: 'Irish Physicist, Mathematician',
+     photo: "images/Hamilton.jpg",
+     link: "http://en.wikipedia.org/wiki/William_Rowan_Hamilton",
+     marker: {
+         symbol: 'url(images/Hamilton-s.png)'
+     },
+
 
 
 
@@ -701,7 +900,39 @@ $(function () {
                    },
 
 
-
+                   }, {
+                   name: 'Charlie Parker',
+                   x: 1955,
+                   y: 34,
+                   profession: 'BIRD! SAX! Developer of Bebop!',
+                   photo: 'images/Parker.jpg',
+                   link: 'http://en.wikipedia.org/wiki/Charlie_Parker',
+                 
+                   marker: {
+                       symbol: 'url(images/Parker-s.png)'
+                   },
+                      }, {
+                   name: 'Lester Young',
+                   x: 1959,
+                   y: 49,
+                   profession: 'American Jazz Tenor Saxophonist',
+                   photo: 'images/Young.jpg',
+                   link: 'http://en.wikipedia.org/wiki/Lester_Young',
+                 
+                   marker: {
+                       symbol: 'url(images/Young-s.png)'
+                   },
+                   }, {
+                   name: 'William Barnsley Allen',
+                   x: 1933,
+                   y: 41,
+                   profession: 'British Army MD, Victoria Cross',
+                   photo: 'images/Allen.jpg',
+                   link: 'http://en.wikipedia.org/wiki/William_Barnsley_Allen',
+                 
+                   marker: {
+                       symbol: 'url(images/Allen-s.png)'
+                   },
 
                }],
            marker: {
@@ -731,6 +962,27 @@ $(function () {
 
                    }
                },
+               {
+                   name: "Anna Nicole Smith",
+                    x: 2007,
+                   y: 39,
+                   profession: 'Model, TeleVision Train Wreck',
+                   photo: "images/smith.jpg",
+                   link: "http://en.wikipedia.org/wiki/Anna_Nicole_Smith",
+                   marker: {
+                       symbol: 'url(images/Smith-s.png)'
+                            },
+ }, {
+                   name: "Judy Garland",
+                    x: 1969,
+                   y: 47,
+                   profession: 'Actress+Singer, Dorothy too!',
+                   photo: "images/Garland.jpg",
+                   link: "http://en.wikipedia.org/wiki/garland",
+                   marker: {
+                       symbol: 'url(images/garland-s.png)'
+                        },
+                        },
 
                {
                    name: 'Heath Ledger',
@@ -1158,7 +1410,7 @@ $(function () {
                     },
 
                    {
-                   name: "Ol'_Dirty_Bastard",
+                   name: "Ol' Dirty Bastard",
                     x: 2004,
                    y: 35,
                    profession: 'Outrageously Profane Wu-Tang-er',
@@ -1251,7 +1503,86 @@ $(function () {
                        symbol: 'url(images/Lund-s.png)'
                    },
 
-
+                                       }, {
+                   name: 'Donyale Luna',
+                    x: 1979,
+                   y: 33,
+                   profession: 'Supermodel + Actress',
+                   photo: "images/Luna.jpg",
+                   link: "http://en.wikipedia.org/wiki/Donyale_Luna",
+                   marker: {
+                       symbol: 'url(images/luna-s.png)'
+                   },
+                    }, {
+                   name: 'George Sanders',
+                    x: 1972,
+                   y: 65,
+                   profession: 'Russian-born EnglishActor,bored',
+                   photo: "images/Sanders.jpg",
+                   link: "http://en.wikipedia.org/wiki/George_Sanders",
+                   marker: {
+                       symbol: 'url(images/Sanders-s.png)'
+                   },
+                    }, {
+                   name: 'Lester Bangs',
+                    x: 1982,
+                   y: 33,
+                   profession: 'Wrote for Rolling Stone, Creem',
+                   photo: "images/Bangs.jpg",
+                   link: "http://en.wikipedia.org/wiki/Lester_Bangs",
+                   marker: {
+                       symbol: 'url(images/Bangs-s.png)'
+                   },
+                    }, {
+                   name: 'Nick Drake',
+                    x: 1974,
+                   y: 26,
+                   profession: 'Singer/Songwriter, "Pink Moon"',
+                   photo: "images/Drake.jpg",
+                   link: "http://en.wikipedia.org/wiki/Nick_Drake",
+                   marker: {
+                       symbol: 'url(images/Drake-s.png)'
+                   },
+                     }, {
+                   name: "Johnny O'keefe",
+                    x: 1935,
+                   y: 43,
+                   profession: 'Aussie Rocker, Wild One+Shout!',
+                   photo: "images/okeefe.jpg",
+                   link: "http://en.wikipedia.org/wiki/Johnny_O'Keefe#Death_and_legacy",
+                   marker: {
+                       symbol: 'url(images/okeefe-s.png)'
+                   },
+ },  {
+                   name: "Nick Adams",
+                    x: 1968,
+                   y: 36,
+                   profession: 'Actor and Notorious Partier',
+                   photo: "images/adams.jpg",
+                   link: "http://en.wikipedia.org/wiki/Nick_Adams_(actor)",
+                   marker: {
+                       symbol: 'url(images/adams-s.png)'
+                        },
+                         }, {
+                   name: "Pier Angeli",
+                    x: 1971,
+                   y: 39,
+                   profession: 'Italian Actress',
+                   photo: "images/Angeli.jpg",
+                   link: "http://en.wikipedia.org/wiki/Pier_Angeli",
+                   marker: {
+                       symbol: 'url(images/Angeli-s.png)'
+                        },
+               }, {
+                   name: 'Tommy Dorsey',
+                   x: 1956,
+                   y: 51,
+                   profession: 'American Jazz Trumbonist',
+                   photo: "images/Dorsey.jpg",
+                   link: "http://en.wikipedia.org/wiki/Tommy Dorsey",
+                   marker: {
+                       symbol: 'url(images/Dorsey-s.png)'
+  },
 
 
 
@@ -1308,7 +1639,7 @@ $(function () {
                     x: 1969,
                    y: 32,
                    profession: 'Founder of the Rolling Stones',
-                   photo: "images/photos/Jones.jpg",
+                   photo: "images/Jones.jpg",
                    link: "http://en.wikipedia.org/wiki/Brian_Jones",
                    marker: {
                        symbol: 'url(images/b-jones-s.png)',
@@ -1436,11 +1767,217 @@ $(function () {
                    },
                },
 
+
+               {
+                   name: 'Elizabeth Siddal',
+                    x: 1862,
+                   y: 32,
+                   profession: 'English Model, Poet, Artist',
+                   photo: "images/Siddal.jpg",
+                   link: "http://en.wikipedia.org/wiki/Elizabeth_Siddal",
+                   marker: {
+                       symbol: 'url(images/Siddal-s.png)'
+                   },
+               },
+               {
+                   name: 'Frida Kahlo',
+                    x: 1954,
+                   y: 47,
+                   profession: 'Mexican Artist wed Diego Rivera',
+                   photo: "images/Kahlo.jpg",
+                   link: "http://en.wikipedia.org/wiki/Frida_Kahlo",
+                   marker: {
+                       symbol: 'url(images/Kahlo-s.png)'
+                   },
+               },
+               {
+                   name: 'Gram Parsons',
+                    x: 1973,
+                   y: 26,
+                   profession: 'Musician+Flying Burrito Brother',
+                   photo: "images/Parsons.jpg",
+                   link: "http://en.wikipedia.org/wiki/Gram_Parsons",
+                   marker: {
+                       symbol: 'url(images/Parsons-s.png)'
+                   },
+               },
+
+               {
+                   name: 'Janet Achurch',
+                    x: 1916,
+                   y: 45,
+                   profession: 'English Stage Actress',
+                   photo: "images/Achurch.jpg",
+                   link: "http://en.wikipedia.org/wiki/Janet_Achurch",
+                   marker: {
+                       symbol: 'url(images/Achurch-s.png)'
+                       },
+                   },
+                   {
+                   name: 'Jay Bennett',
+                    x: 2009,
+                   y: 51,
+                   profession: 'Musician, Guitarist in Wilco',
+                   photo: "images/Bennett.jpg",
+                   link: "http://en.wikipedia.org/wiki/Jay_Bennett",
+                   marker: {
+                       symbol: 'url(images/Bennett-s.png)'
+                   },
+                   },
+               {
+                   name: 'Jerry Garcia',
+                    x: 1995,
+                   y: 53,
+                   profession: "Grateful Dead Head, +HippieLord",
+                   photo: "images/Garcia.jpg",
+                   link: "http://en.wikipedia.org/wiki/Jerry_Garcia",
+                   marker: {
+                       symbol: 'url(images/Garcia-s.png)'
+                   
+                      },
+                   },
+
+                {
+                   name: 'John Candy',
+                    x: 1994,
+                   y: 43,
+                   profession: 'Half Man, Half Dog. A MOG!',
+                   photo: "images/Candy.jpg",
+                   link: "http://en.wikipedia.org/wiki/John_candy",
+                   marker: {
+                       symbol: 'url(images/Candy-s.png)'
+                   
+                      },
+                   },
+               {
+                   name: 'Lenny Bruce',
+                    x: 1966,
+                   y: 40,
+                   profession: 'Standup Satirist/Maybe Satanist',
+                   photo: "images/Bruce.jpg",
+                   link: "http://en.wikipedia.org/wiki/Lenny_Bruce",
+                   marker: {
+                       symbol: 'url(images/bruce-s.png)'
+                   },
+                   },
+               {
+                   name: 'Louisa May Alcott',
+                    x: 1888,
+                   y: 55,
+                   profession: 'American Novelist, Little Lady',
+                   photo: "images/Alcott.jpg",
+                   link: "http://en.wikipedia.org/wiki/Louisa_May_Alcott",
+                   marker: {
+                       symbol: 'url(images/Alcott-s.png)'
+                   },
+                   },
+                  {
+                   name: 'Mattie Blaylock',
+                    x: 1888,
+                   y: 37,
+                   profession: "Wyatt Earp's Lady of The Night",
+                   photo: "images/Blaylock.jpg",
+                   link: "http://en.wikipedia.org/wiki/mattie_blaylock",
+                   marker: {
+                       symbol: 'url(images/Blaylock-s.png)'
+                   },
+                   },
+
+                   {
+                   name: 'R.G. Surdam',
+                    x: 1891,
+                   y: 56,
+                   profession: 'American Real Estate Magnate',
+                   photo: "images/Surdam.jpg",
+                   link: "http://en.wikipedia.org/wiki/R._G._Surdam",
+                   marker: {
+                       symbol: 'url(images/surdam-s.png)'
+                   },
+                   },
+               {
+                   name: 'Max Linder',
+                    x: 1925,
+                   y: 41,
+                   profession: 'French Silent Filmmaker',
+                   photo: "images/Linder.jpg",
+                   link: "http://en.wikipedia.org/wiki/Max_Linder",
+                   marker: {
+                       symbol: 'url(images/Linder-s.png)'
+                   },
+               },
+{
+                   name: 'Michael Jackson',
+                    x: 2009,
+                   y: 50,
+                   profession: 'Certified King of Pop',
+                   photo: "images/Jackson.jpg",
+                   link: "http://en.wikipedia.org/wiki/Michael_Jackson",
+                   marker: {
+                       symbol: 'url(images/Jackson-s.png)'
+                   },
+               },
+               {
+                   name: 'Truman Capote',
+                    x: 1984,
+                   y: 59,
+                   profession: "'Non-Fiction Novel' Writer",
+                   photo: "images/capote.jpg",
+                   link: "http://en.wikipedia.org/wiki/Truman_Capote",
+                   marker: {
+                       symbol: 'url(images/capote-s.png)'
+                   },
+               },
+               {
+                   name: 'Thomas Kinkade',
+                    x: 2012,
+                   y: 54,
+                   profession: 'A Terrible Painter of Unicorns',
+                   photo: "images/Kinkade.jpg",
+                   link: "http://en.wikipedia.org/wiki/Thomas_Kinkade",
+                   marker: {
+                       symbol: 'url(images/Kinkade-s.png)'
+                   },
+               },
+{
+                   name: 'Ureli Corelli Hill',
+                    x: 1875,
+                   y: 71,
+                   profession: '1st Conductor of NYPhilharmonic',
+                   photo: "images/Hill.jpg",
+                   link: "http://en.wikipedia.org/wiki/Ureli_Corelli_Hill",
+                   marker: {
+                       symbol: 'url(images/hill-s.png)'
+                   },
+               },
+{
+                   name: 'Wallace Reid',
+                    x: 1923,
+                   y: 31,
+                   profession: 'American Silent Film Actor',
+                   photo: "images/Reid.jpg",
+                   link: "http://en.wikipedia.org/wiki/Wallace_Reid",
+                   marker: {
+                       symbol: 'url(images/Reid-s.png)'
+                   },
+               },
+{
+                   name: 'Giacomo Puccini',
+                    x: 1924,
+                   y: 65,
+                   profession: 'Famed Italian Opera Composer',
+                   photo: "images/Puccini.jpg",
+                   link: "http://en.wikipedia.org/wiki/Giacomo_Puccini",
+                   marker: {
+                       symbol: 'url(images/Puccini-s.png)'
+                   },
+            
+
+               },
+
                ],
            marker: {
                enabled: true,
                symbol: 'circle'
-              
            },
        },
      ///////////////////////////////// TOBACCO
@@ -1795,6 +2332,75 @@ $(function () {
                        symbol: 'url(images/Hansberry-s.png)'
                    },
                },
+
+                      {
+                   name: 'Pat Nixon',
+                    x: 1993,
+                   y: 81,
+                   profession: 'First Lady of the United States',
+
+                   photo: "images/Nixon.jpg",
+                   link: "http://en.wikipedia.org/wiki/Pat_Nixon",
+                   marker: {
+                       symbol: 'url(images/Nixon-s.png)'
+   },
+               },
+
+                {
+                   name: 'Petter Jennings',
+                    x: 2005,
+                   y: 67,
+                   profession: 'Canadian-American News Anchor',
+                   photo: "images/Jennings.jpg",
+                   link: "http://en.wikipedia.org/wiki/Peter_Jennings",
+                   marker: {
+                       symbol: 'url(images/Jennings-s.png)'
+                   },
+               },
+{
+                   name: 'Bob Fosse',
+                    x: 1987,
+                   y: 60,
+                   profession: 'Choreographer, Actor, Dancer',
+
+                   photo: "images/Fossee.jpg",
+                   link: "http://en.wikipedia.org/wiki/Bob_Fosse",
+                   marker: {
+                       symbol: 'url(images/fosse-s.png)'
+                   },
+               },
+
+
+
+
+                       {
+                   name: 'T.S. Eliot',
+                    x: 1965,
+                   y: 76,
+                   profession: 'Master Poet, liable for Cats',
+
+                   photo: "images/Eliot.jpg",
+                   link: "http://en.wikipedia.org/wiki/Ts_eliot",
+                   marker: {
+                       symbol: 'url(images/Eliot-s.png)'
+                          },
+               },
+
+
+
+                  {
+                   name: 'Boris Karloff',
+                    x: 1969,
+                   y: 81,
+                   profession: "Original Frankenstein's Monster",
+
+                   photo: "images/Karloff.jpg",
+                   link: "http://en.wikipedia.org/wiki/Boris_Karloff",
+                   marker: {
+                       symbol: 'url(images/Karloff-s.png)'
+                          },
+               },
+
             
 
 
@@ -1834,12 +2440,16 @@ $(function () {
 
                 plotBorderWidth: null,
 
-                plotShadow: false
+                plotShadow: false,
+                spacingTop: 0,
+            spacingLeft: 0,
+            spacingRight: 0,
+            spacingBottom: 0
 
             },
 
             title: {
-                enabled: false,
+                enabled: true,
                 text: null,
 
             },
@@ -1880,7 +2490,7 @@ $(function () {
 
                         formatter: function() {
 
-                            return '<b>'+ this.point.x +'</b> '+ this.percentage +' %';
+                            return '<b>'+ this.point.name +'</b> '+ this.percentage +' %';
 
                         }
 
@@ -1898,14 +2508,35 @@ $(function () {
                 name: 'Browser share',
 
                 data: [
-                ['Acting',   45.0, ],
-                ['Writing',       26.8],
-                ['Politics',       26.8],
-                ['Math and Sciences',       26.8],
-                ['Music',       26.8],
-                ['Fine Arts',       26.8],
-                ['Politics',       26.8],
-                
+                ['Acting',   10.0, ],
+                ['Writing',       10.0],
+                ['Politics',       10.0],
+                ['Math and Sciences',       20.0],
+                ['Music',       25.00],
+                ['Fine Arts',       10.00],
+                ['Politics',       15.00],
+
+           /*
+              data: [
+                {type: 'Acting',
+                percent: 50.0%,
+              }, 
+
+                {type: 'Writing',
+                percent: 50.0%,
+              },
+
+
+
+/*
+                 ],
+                ['Writing',       10.0],
+                ['Politics',       10.0],
+                ['Math and Sciences',       20.0],
+                ['Music',       25.00],
+                ['Fine Arts',       10.00],
+                ['Politics',       15.00],
+*/
             ]
 
             }]
@@ -1924,11 +2555,15 @@ $(function () {
         chart: {
             plotBackgroundColor: null,
            
-            plotShadow: false
+            plotShadow: false,
+            spacingTop: 0,
+            spacingLeft: 0,
+            spacingRight: 0,
+            spacingBottom: 0
         },
         title: {
-            text: 'Substance Abuse Breakdown',
-            enabled: true,
+            text: null,
+            enabled: false,
         },
         tooltip: {
             pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
@@ -1951,7 +2586,7 @@ $(function () {
             name: 'Browser share',
             data: [
                 ['Alcohol',   45.0],
-                ['Herion',       26.8],
+                ['heroin',       26.8],
                 
                 ['Pills',    8.5],
                 ['Cocaine',     6.2],
