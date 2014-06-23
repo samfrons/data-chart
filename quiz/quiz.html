@@ -57,7 +57,7 @@ section.quiz {
 
 .owl-controls.clickable {
   position: relative;
-top: 70px;
+top:-935px;
 }
 
 .owl-theme .owl-controls .owl-buttons div {
@@ -115,9 +115,13 @@ h3.risk > span {
   padding: 10px;
   margin: 0 auto;
 max-width: 700px;
+position: relative;
+top: 50px;
 
 }
-
+.substance.sub-question {
+  top:0;
+}
 .sub-question h3 {
   font-size: 1.3em;
     font-weight: 500;
@@ -303,6 +307,125 @@ ul.responses li.selected {
 
     <section class="quiz">
         <div id="owl-demo" class="owl-carousel owl-theme">
+
+                   <!-- standard question -->
+          <div class="item question-screen">
+            <h2 class="main-question aqua">In the past year, how often have you used the following?</h2>
+            
+            <div class="sub-question">
+                <h3>Alcohol (For men, 5 or more drinks a day. For women, 4 or more drinks a day)</h3>
+                <ul class="responses q1">
+                    <li class="selected">Never</li>
+                    <li>Once or Twice</li>
+                    <li>Monthly</li>
+                    <li>Weekly</li>
+                    <li class="last">Daily or almost daily</li>
+                </ul>
+            </div>
+
+
+            <div class="sub-question">
+                  <h3>Tobacco Products</h3>
+                  <ul class="responses q1">
+                      <li>Never</li>
+                      <li>Once or Twice</li>
+                      <li>Monthly</li>
+                      <li>Weekly</li>
+                      <li class="last">Daily or almost daily</li>
+                  </ul>
+              </div>
+
+            <div class="sub-question">
+                  <h3>Prescription Drugs for Non-Medical Reasons</h3>
+                  <ul class="responses q1">
+                      <li>Never</li>
+                      <li>Once or Twice</li>
+                      <li>Monthly</li>
+                      <li>Weekly</li>
+                      <li class="last">Daily or almost daily</li>
+                  </ul>
+              </div>
+
+
+              <div class="sub-question">
+                  <h3>Illegal Drugs</h3>
+                  <ul class="responses q1">
+                      <li>Never</li>
+                      <li>Once or Twice</li>
+                      <li>Monthly</li>
+                      <li>Weekly</li>
+                      <li class="last">Daily or almost daily</li>
+                  </ul>
+              </div>
+
+          </div>
+
+
+        
+        <!-- quick result -->
+          <div class="item question-screen q-results">
+            <h2 class="main-question aqua">Quick Results</h2>
+        
+          <div class="middle-max">
+            <h3 class="risk">At Risk!<span class="fa fa-warning"></span></h3>
+          
+              <div class="substance sub-question">
+                <h4>Heavy Drinking</h4>
+                <p>Binge drinking regularly incidcates that something might be wrong. Please continue</p>
+                <div class="btn-group">
+              <button type="button" class="btn btn-default">Find meeting</button>
+              <button type="button" class="btn btn-default">Find specialist</button>
+              <button type="button" class="btn btn-default">Find rehab</button>
+              <button type="button" class="btn btn-default">Learn more</button>
+            </div>
+              </div>
+
+              <div class="substance sub-question">
+                <h4>Tobacco</h4>
+                <p>Binge drinking regularly incidcates that something might be wrong. Please continue</p>
+                  <div class="btn-group">
+              <button type="button" class="btn btn-default">Find meeting</button>
+              <button type="button" class="btn btn-default">Find specialist</button>
+              <button type="button" class="btn btn-default">Find rehab</button>
+              <button type="button" class="btn btn-default">Learn more</button>
+            </div>
+              </div>
+
+              <div class="substance sub-question">
+                <h4>Illegal/prescription drugs</h4>
+                <p>Binge drinking regularly incidcates that something might be wrong. Please continue</p>
+                  <div class="btn-group">
+              <button type="button" class="btn btn-default">Find meeting</button>
+              <button type="button" class="btn btn-default">Find specialist</button>
+              <button type="button" class="btn btn-default">Find rehab</button>
+              <button type="button" class="btn btn-default">Learn more</button>
+            </div>
+              </div>
+            <hr>
+            <div class="plan">
+              <div class="dmbutton">
+                Start recommended treatment
+              </div>
+              <br>
+
+              <div class="dmbutton">
+                Continue Evaluation
+              </div>
+            </div>
+
+
+
+            </div>
+
+
+
+
+
+
+
+
+          </div>
+          
          
          <!-- full result -->
           <div class="item question-screen q-results">
@@ -370,124 +493,12 @@ ul.responses li.selected {
 
           </div>
 
-        
-        <!-- quick result -->
-          <div class="item question-screen q-results">
-            <h2 class="main-question aqua">Quick Results</h2>
-        
-          <div class="middle-max">
-            <h3 class="risk">At Risk!<span class="fa fa-warning"></span></h3>
-          
-              <div class="substance sub-question">
-                <h4>Heavy Drinking</h4>
-                <p>Binge drinking regularly incidcates that something might be wrong. Please continue</p>
-                <div class="btn-group">
-              <button type="button" class="btn btn-default">Find meeting</button>
-              <button type="button" class="btn btn-default">Find specialist</button>
-              <button type="button" class="btn btn-default">Find rehab</button>
-              <button type="button" class="btn btn-default">Learn more</button>
-            </div>
-              </div>
-
-              <div class="substance sub-question">
-                <h4>Tobacco</h4>
-                <p>Binge drinking regularly incidcates that something might be wrong. Please continue</p>
-                  <div class="btn-group">
-              <button type="button" class="btn btn-default">Find meeting</button>
-              <button type="button" class="btn btn-default">Find specialist</button>
-              <button type="button" class="btn btn-default">Find rehab</button>
-              <button type="button" class="btn btn-default">Learn more</button>
-            </div>
-              </div>
-
-              <div class="substance sub-question">
-                <h4>Illegal/prescription drugs</h4>
-                <p>Binge drinking regularly incidcates that something might be wrong. Please continue</p>
-                  <div class="btn-group">
-              <button type="button" class="btn btn-default">Find meeting</button>
-              <button type="button" class="btn btn-default">Find specialist</button>
-              <button type="button" class="btn btn-default">Find rehab</button>
-              <button type="button" class="btn btn-default">Learn more</button>
-            </div>
-              </div>
-            <hr>
-            <div class="plan">
-              <div class="dmbutton">
-                Start recommended treatment
-              </div>
-              <br>
-
-              <div class="dmbutton">
-                Continue Evaluation
-              </div>
-            </div>
-            </div>
-
-          </div>
-          
-
-
                   
           
 
 
-           <!-- standard question -->
-          <div class="item question-screen">
-            <h2 class="main-question aqua">In the past year, how often have you used the following?</h2>
-            
-            <div class="sub-question">
-                <h3>Alcohol (For men, 5 or more drinks a day. For women, 4 or more drinks a day)</h3>
-                <ul class="responses q1">
-                    <li class="selected">Never</li>
-                    <li>Once or Twice</li>
-                    <li>Monthly</li>
-                    <li>Weekly</li>
-                    <li class="last">Daily or almost daily</li>
-                </ul>
-            </div>
 
 
-            <div class="sub-question">
-                  <h3>Tobacco Products</h3>
-                  <ul class="responses q1">
-                      <li>Never</li>
-                      <li>Once or Twice</li>
-                      <li>Monthly</li>
-                      <li>Weekly</li>
-                      <li class="last">Daily or almost daily</li>
-                  </ul>
-              </div>
-
-            <div class="sub-question">
-                  <h3>Prescription Drugs for Non-Medical Reasons</h3>
-                  <ul class="responses q1">
-                      <li>Never</li>
-                      <li>Once or Twice</li>
-                      <li>Monthly</li>
-                      <li>Weekly</li>
-                      <li class="last">Daily or almost daily</li>
-                  </ul>
-              </div>
-
-
-              <div class="sub-question">
-                  <h3>Illegal Drugs</h3>
-                  <ul class="responses q1">
-                      <li>Never</li>
-                      <li>Once or Twice</li>
-                      <li>Monthly</li>
-                      <li>Weekly</li>
-                      <li class="last">Daily or almost daily</li>
-                  </ul>
-              </div>
-
-          </div>
-
-
-          <div class="item">
-            
-            
-          </div>
         </div>
 
 

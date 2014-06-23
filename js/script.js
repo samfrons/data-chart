@@ -2458,7 +2458,7 @@ $(function () {
 
                 formatter: function() {
 
-                    return '<b>'+ this.point.x +'</b>: '+ this.percentage +' %';
+                    return '<b>'+ this.point.name +'</b> '+ Math.round(this.percentage) +' %';
 
                 }
 
@@ -2471,7 +2471,7 @@ $(function () {
                     allowPointSelect: true,
 
                     cursor: 'pointer',
-                     showInLegend: true,
+                     showInLegend: false,
                      legend: {
                         verticalAlign: 'middle',
                         layout: 'vertical',
@@ -2490,7 +2490,7 @@ $(function () {
 
                         formatter: function() {
 
-                            return '<b>'+ this.point.name +'</b> '+ this.percentage +' %';
+                            return '<b>'+ this.point.name +'</b> '+ Math.round(this.percentage) +' %';
 
                         }
 
@@ -2505,16 +2505,17 @@ $(function () {
 
                 type: 'pie',
 
-                name: 'Browser share',
+                name: 'Death share',
 
                 data: [
-                ['Acting',   10.0, ],
-                ['Writing',       10.0],
-                ['Politics',       10.0],
-                ['Math and Sciences',       20.0],
-                ['Music',       25.00],
-                ['Fine Arts',       10.00],
-                ['Politics',       15.00],
+                ['Stage + Film', 32.08],
+                ['Writing', 10.16],
+                ['Sports',  9.09],
+                ['Math + Sciences', 2.67],
+                ['Music',  24.06],
+                ['Fine Arts', 10.69],
+                ['Business + Politics', 11.22],
+
 
            /*
               data: [
@@ -2546,9 +2547,11 @@ $(function () {
     });
 });
 
+
+
 $(function () {
     Highcharts.setOptions({
-     colors: ['rgb(5, 219, 194)', 'rgba(40, 40, 40,.8)', 'rgba(210, 221, 40,.8)', 'rgba(220, 240, 240,.9)', 'rgba(242, 62, 71,.8)']
+     colors: ['rgb(5, 219, 194)', 'rgba(40, 40, 40,.8)', 'rgba(210, 221, 40,.8)', 'rgba(220, 240, 240,.9)', 'rgba(242, 62, 71,.8)','rgba(255, 165, 0,.8)']
     });
 
     $('#container2').highcharts({
@@ -2566,7 +2569,7 @@ $(function () {
             enabled: false,
         },
         tooltip: {
-            pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+            pointFormat: '{series.name}: <b>{point.y}%</b>'
         },
         plotOptions: {
             pie: {
@@ -2574,7 +2577,7 @@ $(function () {
                 cursor: 'pointer',
                 dataLabels: {
                     enabled: true,
-                    format: '<b>{point.name}</b>: {point.percentage:.1f} %',
+                    format: '<b>{point.name}</b>: {point.y} %',
                     style: {
                         color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
                     }
@@ -2583,14 +2586,14 @@ $(function () {
         },
         series: [{
             type: 'pie',
-            name: 'Browser share',
+            name: 'Death Share',
             data: [
-                ['Alcohol',   45.0],
-                ['heroin',       26.8],
-                
-                ['Pills',    8.5],
-                ['Cocaine',     6.2],
-                ['Combinations/Complications',   0.7]
+                ['Alcohol',   31],
+                ['Heroin',       8],
+                ['Pills',    14],
+                ['Cocaine',    13],
+                ['Complications',   16],
+                ['Tobacco',   18],
             ]
         }]
     });
